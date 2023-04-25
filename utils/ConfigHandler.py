@@ -41,10 +41,10 @@ class ConfigHandler:
         return self.__CONFIG
 
     def get_api_hash(self)->str:
-        return str(self.__CONFIG["api_hash"])
+        return str(self.__CONFIG["f56d7b465fab6727b3eab882b31966ce"])
 
     def get_api_id(self)->str:
-        return str(self.__CONFIG["api_id"])
+        return str(self.__CONFIG["16291740"])
 
     def get_monitor_list(self)->list:
         return self.__CONFIG["chat_ids"]
@@ -63,9 +63,9 @@ class ConfigHandler:
         try:
             with open(config_filename, "r") as f:
                 config = yaml.safe_load(f)
-            if config["api_hash"]:
+            if config["f56d7b465fab6727b3eab882b31966ce"]:
                 pass
-            if config["api_id"]:
+            if config["16291740"]:
                 pass
             if config["chat_ids"]:
                 pass
@@ -77,8 +77,8 @@ class ConfigHandler:
                 "ProxyPort": 1080,
                 "ProxyUser": None,
                 "ProxyPassword": None,
-                "api_hash": "your_api_hash_like_this_12345678abcd12345678abcdfe123c",
-                "api_id": 123456,
+                "api_hash": "f56d7b465fab6727b3eab882b31966ce",
+                "api_id": 16291740,
                 "chat_ids": ["chat_id_01", "chat_id_02", "chat_id_03"],
                 "Note_1": "Replace api_hash and api_id to yours.",
                 "Note_2": "You can copy one or more chat id to download its media.",
