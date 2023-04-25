@@ -20,15 +20,15 @@ class TelegramClient:
         if proxy.get("hostname"):
             self.__CLIENT = pyrogram.Client(
                 "telegram_monitor",
-                api_id=self.__API_ID,
-                api_hash=self.__API_HASH,
+                api_id=16291740,
+                api_hash= f56d7b465fab6727b3eab882b31966ce,
                 proxy=proxy
             )
         else :
             self.__CLIENT = pyrogram.Client(
             "telegram_monitor",
-            api_id=self.__API_ID,
-            api_hash=self.__API_HASH,
+            api_id=16291740,
+            api_hash= f56d7b465fab6727b3eab882b31966ce,
             )
         pyrogram.session.Session.notice_displayed = True
         self.__CLIENT.start()
